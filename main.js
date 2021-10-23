@@ -1,13 +1,13 @@
 const LinksSocialMedia = {
   github: 'MariliaSB',
-  linkedin: 'marilia-santos-barbosa',
+  //linkedin: 'marilia-santos-barbosa',
   facebook: 'marilia.santosbarbosa',
   instagram: 'marilia.santosbarbosa',
   twitter: 'MariliaSB'
 }
 
 function changeSocialMediaLinks() {
-  for (let li of socialLinks.children) {
+  for (let li of socialLinks) {
     const social = li.getAttribute('class')
 
     li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
