@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
-  linkedin: 'marilia-santos-barbosa',
   github: 'MariliaSB',
+  linkedin: 'marilia-santos-barbosa',
   facebook: 'marilia.santosbarbosa',
   instagram: 'marilia.santosbarbosa',
-  twitter: 'jakelinytec'
+  twitter: 'MariliaSB'
 }
 
 function changeSocialMediaLinks() {
@@ -21,7 +21,6 @@ function getGitHubProfileInfos() {
 
   fetch(url)
     .then(response => response.json())
-    .then(data => data.bio())
     .then(data => {
       userName.textContent = data.name
       userBio.textContent = data.bio
